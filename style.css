@@ -1,0 +1,60 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+h1 { text-align: center; color: #333; margin-bottom: 5px; }
+.subtitle { text-align: center; color: #666; margin-bottom: 25px; }
+.input-section { display: flex; gap: 10px; margin-bottom: 25px; }
+#taskInput {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+button {
+    padding: 12px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover { background: #5a6fd6; }
+#taskList { list-style: none; }
+#taskList li {
+    background: #f8f9ff;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #667eea;
+}
+#taskList li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+    border-left-color: #28a745;
+}
+.delete-btn {
+    background: #ff4757;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.delete-btn:hover { background: #e84118; }
+.footer { text-align: center; margin-top: 30px; color: #999; font-size: 13px; 
